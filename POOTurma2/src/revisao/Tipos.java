@@ -1,4 +1,5 @@
-package revisao;
+
+package Revisao;
 
 
 public class Tipos {
@@ -19,23 +20,28 @@ public class Tipos {
             boolean
         */
         byte x = 1;
-        short y = 2;
-        x = (byte)y;
-        System.out.println(y);
+        short x2 = 2;
+        x = (byte)x2;
+        System.out.println(x);
+        float num3 = 3.5f;
         
-        //padrão de valor
-        double num1 = 2.3;
-        float num2 = 2.3f;
-        
-        //Inferência de tipos
+        //inferência de tipos
         var nome = "Edson";
-        System.out.println(nome);
+        var numero = 10; //nesse caso assume o int (padrão)
         
-        int numero = 36;
-        Integer numero2 = 36;
-        System.out.println(numero);
-        System.out.println(numero2.toString());
+        int n1 = 3;
+        Integer n2 = 3;
+        System.out.println(n1);
+        System.out.println(n2);
         
+        //Conversões de tipo
+        int novoNumero = Integer.parseInt("10");
+        float numeroFlutuando =  (float) 10.3;
         
+        //exemplo de tipo booleano
+        boolean abc = true; //false
+        
+        abc = n1 >= n2;
+        System.out.println(abc);
     }
 }

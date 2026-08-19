@@ -1,19 +1,38 @@
 
 package fundamentos;
 
+
 public class Pessoa {
-    public String nome;
+
+    
+    private String nome;
     public String corDosOlhos;
     
-    public void RecebeONome(String nome){
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
         this.nome = nome;
     }
-    public String PerguntaONome(Pessoa pessoa){
-        String resposta = "Qual é o seu nome?\n";
-        resposta += pessoa.ResponderONome();
+
+    public String getCorDosOlhos() {
+        return corDosOlhos;
+    }
+
+    public void setCorDosOlhos(String corDosOlhos) {
+        this.corDosOlhos = corDosOlhos;
+    }
+    
+    public void DarNome(String nome){
+        this.nome = nome;
+    }
+    public String perguntarONome(Pessoa pessoa){
+        String resposta = "Qual o seu nome?\n";
+        resposta += pessoa.responderONome();
         return resposta;
     }
-    public String ResponderONome(){
-        return "Meu nome é "+ this.nome;
+    public String responderONome(){
+        return "Meu nome é "+this.nome;
     }
 }
