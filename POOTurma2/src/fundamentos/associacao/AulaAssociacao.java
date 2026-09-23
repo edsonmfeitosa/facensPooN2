@@ -5,7 +5,7 @@ package fundamentos.associacao;
 public class AulaAssociacao {
     public static void main(String[] args) {
         //Motor m1 = new Motor();
-        Automovel a1 = new Automovel("fusca", "branco",
+        Automovel a1 = new Automovel("branco",
         1969);
         System.out.println(a1.toString());
         a1.acelerar();
@@ -14,7 +14,7 @@ public class AulaAssociacao {
         System.out.println(a1.getMotor().getFatorPotencia());
         a1.frear();
         Automovel a2 = new Automovel(
-        "Stepway", "preto", 2025);
+        "preto", 2025);
        
         System.out.println(
         a1.getMotor().getAutomovel()
