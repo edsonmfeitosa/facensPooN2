@@ -31,6 +31,8 @@ public class AulaHeranca {
                 .getAutomovel().getDono()
                 .getAutomoveis().get(0).getCor()
         );
+        Automovel auto1 = new Automovel("azul", 0);
+        
         for (Automovel auto : p.getAutomoveis()) {
             System.out.println(auto.getAno());
             if (auto instanceof Ferrari) {
