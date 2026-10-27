@@ -17,6 +17,13 @@ public class AulaBD {
             System.out.println(cliente.toString());
         }
         */
-        System.out.println(cDao.consultar(2).toString());
+        //System.out.println(cDao.consultar(2).toString());
+        Cliente cli = new Cliente("Miguel","3211232", "22233311", 
+        "22244455550", "miguel@gmail.com", "M", "Rua teste", "Jd. Teste",
+        "Sorocaba", "SP");
+        //System.out.println(cli.toString());
+        //System.out.println(cDao.cadastrar(cli).toString());
+        //cDao.alterar(cli, 17);
+        cDao.excluir(16);
     }
 }
